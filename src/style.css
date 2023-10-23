@@ -1,0 +1,111 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #FFC000;
+}
+#particleContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+footer {
+    background: transparent;
+}
+
+
+body > main {
+    min-height: calc(100vh - 70px); /* Assumes header is roughly 70px, adjust as needed */
+}
+
+header {
+    z-index: 10;
+}
+
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header a {
+    margin-left: 30px;
+}
+
+.btn:hover {
+    background-color: #FFC000; /* This color is not available in Tailwind by default */
+}
+
+.models-section {
+    background: transparent;
+    height: 100vh; 
+    scroll-snap-align: start;
+}
+
+.models-title {
+    font-family: 'Orbitron', sans-serif; /* Specific font */
+}
+
+.model-card {
+    padding-top: 20px; /* Specific padding */
+    padding-bottom: 20px; /* Specific padding */
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Added border */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Added transition for border-color */
+}
+
+.explore-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7); /* Slightly more opaque border on hover */
+}
+
+.explore-btn:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.scroll-container {
+    overflow-y: auto;
+    scroll-snap-type: y proximity; /* 'y' for vertical scrolling, 'proximity' for gentle snapping */
+  }
+  

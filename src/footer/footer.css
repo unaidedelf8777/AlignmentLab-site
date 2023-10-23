@@ -1,0 +1,57 @@
+.custom-footer {
+    background-color: transparent;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #eaeaea;
+    position: relative;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-section, .links-section, .about-section, .social-section {
+    flex-basis: 25%; /* Divides the footer into 4 equal parts */
+}
+
+.links-section ul, .about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-footer a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.custom-footer a:hover {
+    text-decoration: underline;
+}
+
+.social-section img {
+    margin: 0 5px;
+    height: 24px; /* Adjust this as per your logo's requirement */
+}
+
+.social-section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Adjust as needed */
+    bottom: 20px;
+    left: 10;  /* To ensure it starts from the left side of the footer */
+    right: 10;  /* Ensures it spans the entire width of the footer. Adjust if needed. */
+}
+
+
